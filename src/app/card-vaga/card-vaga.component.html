@@ -1,0 +1,19 @@
+<div class="container mural">
+
+    <div class="card-vaga__container" *ngFor="let vaga of vagas">
+        <h3>{{vaga.descricao}}</h3>
+        <h5>id#{{vaga.id}}</h5>
+        <h5>{{vaga.local}}</h5>
+        <p>Obrigatório - {{vaga.reqObrigatorios}}</p>
+        <p>Desejavel - {{vaga.reqDesejaveis}}</p>
+        <p>Benefícios - {{vaga.beneficios}}</p>
+        <p>Remuneração - R$ {{vaga.remuneracao}},00</p>
+
+        <div class="btns">
+            <a routerLink="/atualizar" [state]=vaga class="btn btn-primary">Atualizar</a>
+            <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir</button>
+        </div>
+    </div>
+
+
+</div>

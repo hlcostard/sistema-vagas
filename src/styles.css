@@ -1,0 +1,132 @@
+:root {
+  --primary-clr: rgb(0, 102, 255);
+  --secondary-clr: rgb(240, 245, 251);
+  --dark-clr: rgb(155, 155, 155);
+
+  --br: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 85%;
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: var(--secondary-clr);
+}
+
+.navbar {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 1.75rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1em;
+  font-weight: 600;
+}
+
+.nav__list li:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.nav__list li:nth-child(4) {
+  margin-left: auto;
+  color: var(--primary-clr);
+}
+
+.nav__list a:hover,
+.nav__list a:focus {
+  color: var(--primary-clr);
+}
+
+.mural {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.card-vaga__container {
+  margin-top: 2em;
+  width: 30%;
+  padding: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: var(--br);
+  text-align: center;
+}
+
+.card-vaga__container h5 {
+  color: var(--dark-clr);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.form__container {
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: 60%;
+  max-width: 750px;
+  border-radius: var(--br);
+}
+
+.form__input {
+  text-align: left;
+  color: var(--primary-clr);
+  margin: 0.75rem auto;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.6em 1.15em;
+  background-color: var(--primary-clr);
+  color: white;
+  border: none;
+  border-radius: var(--br);
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.5;
+}
+
+.btn-danger {
+  background-color: red;
+}

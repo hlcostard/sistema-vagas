@@ -1,0 +1,28 @@
+<div class="container">
+    <form class="form__container">
+        <div class="form__input">
+            <label>id</label><input type="number" name="id" [(ngModel)]="vaga.id">
+        </div>
+        <div class="form__input">
+            <label>Vaga</label><input type="text" name="descricao" [(ngModel)]="vaga.descricao">
+        </div>
+        <div class="form__input">
+            <label>Requisitos Obrigatórios</label><input type="text" name="reqObrigatorios"
+                [(ngModel)]="vaga.reqObrigatorios">
+        </div>
+        <div class="form__input">
+            <label>Requisitos Desejáveis</label><input type=" text" name="reqDesejaveis"
+                [(ngModel)]="vaga.reqDesejaveis">
+        </div>
+        <div class="form__input">
+            <label>Remuneração</label><input type=" text" name="remuneracao" [(ngModel)]="vaga.remuneracao">
+        </div>
+        <div class="form__input">
+            <label>Benefícios</label><input type="text" name="beneficios" [(ngModel)]="vaga.beneficios">
+        </div>
+        <div class="form__input">
+            <label>Local de trabalho</label><input type="text" name="local" [(ngModel)]="vaga.local">
+        </div>
+        <button type="button" class="btn" (click)="cadastrar()">Cadatrar Vaga</button>
+    </form>
+</div>
