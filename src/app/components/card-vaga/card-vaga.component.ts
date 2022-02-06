@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Vaga } from '../models/Vagas.model';
-import { VagasService } from '../vagas.service';
+import { Vaga } from '../../models/Vagas.model';
+import { VagasService } from '../../vagas.service';
 
 @Component({
   selector: 'app-card-vaga',
@@ -9,6 +9,9 @@ import { VagasService } from '../vagas.service';
 })
 
 export class CardVagaComponent implements OnInit {
+  static listarVagas() {
+    throw new Error('Method not implemented.');
+  }
 
   public vagas: Vaga[] = [];
   public vaga: Vaga = new Vaga(0, "", "", "", 0, "", "");
@@ -32,7 +35,7 @@ export class CardVagaComponent implements OnInit {
                 vaga.reqDesejaveis,
                 vaga.remuneracao,
                 vaga.beneficios,
-                vaga.local,
+                vaga.local
               );
             }
           )
@@ -42,12 +45,15 @@ export class CardVagaComponent implements OnInit {
 
   excluir(id: number) {
     this._vagasService.removerVaga(id).subscribe(
-      vaga => { this.vaga = new Vaga(0, "", "", "", 0, "", "") },
+      vaga => {
+        this.vaga = new Vaga(0, "", "", "", 0, "", "");
+        alert("Vaga deletada");
+        this.listarVagas();
+      },
       err => {
         console.log("erro ao excluir");
       }
     );
-    window.location.href = "/mural";
   }
 }
 

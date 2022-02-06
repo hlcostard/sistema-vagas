@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CardVagaComponent } from './card-vaga/card-vaga.component';
-import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
-import { MenuComponent } from './menu/menu.component';
+import { CardVagaComponent } from './components/card-vaga/card-vaga.component';
+import { PainelVagasComponent } from './components/painel-vagas/painel-vagas.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { AppRoutingModule } from './app-routing/app-routing.module'
-import { FormsModule } from '@angular/forms';
-import { AtualizarVagaComponent } from './atualizar-vaga/atualizar-vaga.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AtualizarVagaComponent } from './components/atualizar-vaga/atualizar-vaga.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { AtualizarVagaComponent } from './atualizar-vaga/atualizar-vaga.componen
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

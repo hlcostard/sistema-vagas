@@ -1,22 +1,22 @@
 {
   "vagas": [
     {
-      "id": 1,
-      "descricao": "Desenvolvedor Web",
+      "descricao": "Desenvolvedor Front End",
       "reqObrigatorios": "HTML, CSS e Javascript",
       "reqDesejaveis": "Angular/React",
-      "remuneracao": "1415",
+      "remuneracao": "3415",
       "beneficios": "VA",
-      "local": "São Paulo/SP"
+      "local": "São Paulo/SP",
+      "id": 1
     },
     {
-      "id": 2,
-      "descricao": "Desenvolvedor Back end",
-      "reqObrigatorios": "SQL",
-      "reqDesejaveis": "Java",
-      "remuneracao": "2231",
+      "descricao": "Desenvolvedor Back End",
+      "reqObrigatorios": "SQL, Java",
+      "reqDesejaveis": "Spring boot",
+      "remuneracao": "5000",
       "beneficios": "VA",
-      "local": "Home Office"
+      "local": "Home Office",
+      "id": 2
     },
     {
       "id": 3,
@@ -37,21 +37,30 @@
       "local": "São Bernardo/SP"
     },
     {
-      "id": 5,
       "descricao": "Coordenador de TI",
-      "reqObrigatorios": "coordenar",
+      "reqObrigatorios": "coordenar a equipe",
       "reqDesejaveis": "comunicação",
-      "remuneracao": "5487",
+      "remuneracao": "5480",
       "beneficios": "VR e VA",
-      "local": "Curitiba/PR"
+      "local": "Curitiba/PR",
+      "id": 5
     },
     {
       "id": 6,
-      "descricao": "Assistente",
-      "reqObrigatorios": "office",
-      "reqDesejaveis": "html",
-      "remuneracao": "1200",
-      "beneficios": "VR",
+      "descricao": "Gerente de projetos",
+      "reqObrigatorios": "gerenciar",
+      "reqDesejaveis": "Angular/React",
+      "remuneracao": "4555",
+      "beneficios": "nada",
+      "local": "Curitiba/PR"
+    },
+    {
+      "id": 7,
+      "descricao": "Teste",
+      "reqObrigatorios": "Teste obrigatório",
+      "reqDesejaveis": "teste desejavel",
+      "remuneracao": "6601",
+      "beneficios": "beneficios teste",
       "local": "São Paulo/SP"
     }
   ]

@@ -1,9 +1,9 @@
 :root {
-  --primary-clr: rgb(0, 102, 255);
-  --secondary-clr: rgb(240, 245, 251);
-  --dark-clr: rgb(155, 155, 155);
+  --primary-clr: rgb(10, 88, 204);
+  --secondary-clr: rgb(233, 255, 232);
+  --dark-clr: rgb(126, 126, 126);
 
-  --br: 20px;
+  --br: 15px;
 }
 
 *,
@@ -44,7 +44,7 @@ html {
 
 .navbar {
   padding: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-size: 1.75rem;
 }
 
@@ -82,6 +82,9 @@ html {
   background-color: rgb(255, 255, 255);
   border-radius: var(--br);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .card-vaga__container h5 {
@@ -113,13 +116,17 @@ html {
 }
 
 .btn {
-  padding: 0.6em 1.15em;
+  padding: 0.4em 0.9em;
   background-color: var(--primary-clr);
   color: white;
   border: none;
   border-radius: var(--br);
   cursor: pointer;
   font-size: 1.15rem;
+}
+
+.btns {
+  margin-top: auto;
 }
 
 .btn:hover,

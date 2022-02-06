@@ -1,9 +1,6 @@
 <div class="container">
     <form class="form__container">
         <div class="form__input">
-            <label>id</label><input type="number" name="id" [(ngModel)]="vaga.id">
-        </div>
-        <div class="form__input">
             <label>Vaga</label><input type="text" name="descricao" [(ngModel)]="vaga.descricao">
         </div>
         <div class="form__input">
@@ -23,6 +20,6 @@
         <div class="form__input">
             <label>Local de trabalho</label><input type="text" name="local" [(ngModel)]="vaga.local">
         </div>
-        <button type=" button" class="btn btn-primary" (click)="atualizar(vaga.id)">Atualizar</button>
+        <button type="button" class="btn" (click)="cadastrar()">Cadatrar Vaga</button>
     </form>
 </div>

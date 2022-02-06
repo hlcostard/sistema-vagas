@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="atualizaVaga" (ngSubmit)="atualizar()" class="form__container">
+        <div class="form__input">
+            <label>Vaga</label>
+            <input type="text" class="form-control" formControlName="descricao">
+        </div>
+        <div class="form__input">
+            <label>Requisitos obrigatórios</label>
+            <input type="text" class="form-control" formControlName="reqObrigatorios">
+        </div>
+        <div class="form__input">
+            <label>Requisitos desejaveis</label>
+            <input type="text" class="form-control" formControlName="reqDesejaveis">
+        </div>
+        <div class="form__input">
+            <label>Remuneração</label>
+            <input type="text" class="form-control" formControlName="remuneracao">
+        </div>
+        <div class="form__input">
+            <label>Benefícios</label>
+            <input type="text" class="form-control" formControlName="beneficios">
+        </div>
+        <div class="form__input">
+            <label>Local de trabalho</label>
+            <input type="text" class="form-control" formControlName="local">
+        </div>
+        <button type=" submit" class="btn btn-primary">Atualizar</button>
+    </form>
+</div>
